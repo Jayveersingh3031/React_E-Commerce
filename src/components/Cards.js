@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Cardsdata from './CardsData';
@@ -8,7 +8,7 @@ import { ADD } from '../redux/actions/action';
 
 const Cards = () => {
 
-  const [data, setData] = useState(Cardsdata);
+  // const [data, setData] = useState(Cardsdata);
   const [showNotification, setShowNotification] = useState(false);
   const [progress, setProgress] = useState(100);
   const dispatch = useDispatch();
