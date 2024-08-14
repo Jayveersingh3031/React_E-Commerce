@@ -24,7 +24,7 @@ const CardsDetails = () => {
 
   const compare = ()=>{
     let comparedata = getdata.filter((e)=>{
-      return e.id === id
+      return e.id == id
     });
     setData(comparedata);
   }
@@ -72,7 +72,7 @@ const remove = (item)=>{
               <Table>
                 <tr>
                   <td>
-                    <p> <strong>Item</strong>  : {ele.rname}</p>
+                    <p> <strong>Item name</strong>  : {ele.rname}</p>
                     <p> <strong>Price</strong>  : ₹{ele.price}</p>
                     <p> <strong>Domain</strong>  : {ele.address}</p>
                     <p> <strong>Total</strong>  :₹  {ele.price * ele.qnty}</p>
@@ -92,6 +92,7 @@ const remove = (item)=>{
                 </tr>
               </Table>
             </div>
+          
                 </>
               )
             })
